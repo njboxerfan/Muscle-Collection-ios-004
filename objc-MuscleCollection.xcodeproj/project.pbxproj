@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3134AEEA1A8D12A300BF61A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3134AEE91A8D12A300BF61A5 /* main.m */; };
+		3134AEED1A8D12A300BF61A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3134AEEC1A8D12A300BF61A5 /* AppDelegate.m */; };
+		3134AEF01A8D12A300BF61A5 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3134AEEF1A8D12A300BF61A5 /* StatsViewController.m */; };
+		3134AEF31A8D12A300BF61A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3134AEF11A8D12A300BF61A5 /* Main.storyboard */; };
+		3134AEF51A8D12A300BF61A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3134AEF41A8D12A300BF61A5 /* Images.xcassets */; };
+		3134AEF81A8D12A300BF61A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3134AEF61A8D12A300BF61A5 /* LaunchScreen.xib */; };
+		3134AF121A8D3E8D00BF61A5 /* AddEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3134AF111A8D3E8D00BF61A5 /* AddEntryViewController.m */; };
+		3134AF151A8D44F400BF61A5 /* FISWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3134AF141A8D44F400BF61A5 /* FISWorkout.m */; };
+		3134AF181A8E5D8100BF61A5 /* FISExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3134AF171A8E5D8100BF61A5 /* FISExercise.m */; };
+		3134AF1B1A8E636600BF61A5 /* AddExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3134AF1A1A8E636600BF61A5 /* AddExerciseViewController.m */; };
+		3134AFA21A94F10900BF61A5 /* FISMuscleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3134AFA11A94F10900BF61A5 /* FISMuscleGroup.m */; };
+		3134AFC51A951EC600BF61A5 /* BicepsBrachii.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFBA1A951EC600BF61A5 /* BicepsBrachii.png */; };
+		3134AFC61A951EC600BF61A5 /* Deltoid.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFBB1A951EC600BF61A5 /* Deltoid.png */; };
+		3134AFC71A951EC600BF61A5 /* ExternalOblique.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFBC1A951EC600BF61A5 /* ExternalOblique.png */; };
+		3134AFC81A951EC600BF61A5 /* GluteusMaximus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFBD1A951EC600BF61A5 /* GluteusMaximus.png */; };
+		3134AFC91A951EC600BF61A5 /* LatissimusDorsi.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFBE1A951EC600BF61A5 /* LatissimusDorsi.png */; };
+		3134AFCA1A951EC600BF61A5 /* PectoralisMajor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFBF1A951EC600BF61A5 /* PectoralisMajor.png */; };
+		3134AFCB1A951EC600BF61A5 /* PectoralisMinor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC01A951EC600BF61A5 /* PectoralisMinor.png */; };
+		3134AFCC1A951EC600BF61A5 /* RectusAbdominis.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC11A951EC600BF61A5 /* RectusAbdominis.png */; };
+		3134AFCD1A951EC600BF61A5 /* TransversusAbdominis.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC21A951EC600BF61A5 /* TransversusAbdominis.png */; };
+		3134AFCE1A951EC600BF61A5 /* Trapezius.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC31A951EC600BF61A5 /* Trapezius.png */; };
+		3134AFCF1A951EC600BF61A5 /* VastusLateralis.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC41A951EC600BF61A5 /* VastusLateralis.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3134AEFE1A8D12A300BF61A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3134AEDC1A8D12A300BF61A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3134AEE31A8D12A300BF61A5;
+			remoteInfo = "objc-PushupProtocols";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3134AEE41A8D12A300BF61A5 /* objc-MuscleCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-MuscleCollection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3134AEE81A8D12A300BF61A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3134AEE91A8D12A300BF61A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3134AEEB1A8D12A300BF61A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3134AEEC1A8D12A300BF61A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3134AEEE1A8D12A300BF61A5 /* StatsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
+		3134AEEF1A8D12A300BF61A5 /* StatsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
+		3134AEF21A8D12A300BF61A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3134AEF41A8D12A300BF61A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3134AEF71A8D12A300BF61A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3134AEFD1A8D12A300BF61A5 /* objc-MuscleCollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "objc-MuscleCollectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3134AF021A8D12A300BF61A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3134AF101A8D3E8D00BF61A5 /* AddEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEntryViewController.h; sourceTree = "<group>"; };
+		3134AF111A8D3E8D00BF61A5 /* AddEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEntryViewController.m; sourceTree = "<group>"; };
+		3134AF131A8D44F400BF61A5 /* FISWorkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISWorkout.h; sourceTree = "<group>"; };
+		3134AF141A8D44F400BF61A5 /* FISWorkout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISWorkout.m; sourceTree = "<group>"; };
+		3134AF161A8E5D8100BF61A5 /* FISExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISExercise.h; sourceTree = "<group>"; };
+		3134AF171A8E5D8100BF61A5 /* FISExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISExercise.m; sourceTree = "<group>"; };
+		3134AF191A8E636600BF61A5 /* AddExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddExerciseViewController.h; sourceTree = "<group>"; };
+		3134AF1A1A8E636600BF61A5 /* AddExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddExerciseViewController.m; sourceTree = "<group>"; };
+		3134AFA01A94F10900BF61A5 /* FISMuscleGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISMuscleGroup.h; sourceTree = "<group>"; };
+		3134AFA11A94F10900BF61A5 /* FISMuscleGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISMuscleGroup.m; sourceTree = "<group>"; };
+		3134AFBA1A951EC600BF61A5 /* BicepsBrachii.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BicepsBrachii.png; path = MuscleImages/BicepsBrachii.png; sourceTree = "<group>"; };
+		3134AFBB1A951EC600BF61A5 /* Deltoid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Deltoid.png; path = MuscleImages/Deltoid.png; sourceTree = "<group>"; };
+		3134AFBC1A951EC600BF61A5 /* ExternalOblique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ExternalOblique.png; path = MuscleImages/ExternalOblique.png; sourceTree = "<group>"; };
+		3134AFBD1A951EC600BF61A5 /* GluteusMaximus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GluteusMaximus.png; path = MuscleImages/GluteusMaximus.png; sourceTree = "<group>"; };
+		3134AFBE1A951EC600BF61A5 /* LatissimusDorsi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LatissimusDorsi.png; path = MuscleImages/LatissimusDorsi.png; sourceTree = "<group>"; };
+		3134AFBF1A951EC600BF61A5 /* PectoralisMajor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PectoralisMajor.png; path = MuscleImages/PectoralisMajor.png; sourceTree = "<group>"; };
+		3134AFC01A951EC600BF61A5 /* PectoralisMinor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PectoralisMinor.png; path = MuscleImages/PectoralisMinor.png; sourceTree = "<group>"; };
+		3134AFC11A951EC600BF61A5 /* RectusAbdominis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RectusAbdominis.png; path = MuscleImages/RectusAbdominis.png; sourceTree = "<group>"; };
+		3134AFC21A951EC600BF61A5 /* TransversusAbdominis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TransversusAbdominis.png; path = MuscleImages/TransversusAbdominis.png; sourceTree = "<group>"; };
+		3134AFC31A951EC600BF61A5 /* Trapezius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trapezius.png; path = MuscleImages/Trapezius.png; sourceTree = "<group>"; };
+		3134AFC41A951EC600BF61A5 /* VastusLateralis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VastusLateralis.png; path = MuscleImages/VastusLateralis.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3134AEE11A8D12A300BF61A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3134AEFA1A8D12A300BF61A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3134AEDB1A8D12A300BF61A5 = {
+			isa = PBXGroup;
+			children = (
+				3134AEE61A8D12A300BF61A5 /* objc-MuscleCollection */,
+				3134AF001A8D12A300BF61A5 /* objc-MuscleCollectionTests */,
+				3134AEE51A8D12A300BF61A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3134AEE51A8D12A300BF61A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3134AEE41A8D12A300BF61A5 /* objc-MuscleCollection.app */,
+				3134AEFD1A8D12A300BF61A5 /* objc-MuscleCollectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3134AEE61A8D12A300BF61A5 /* objc-MuscleCollection */ = {
+			isa = PBXGroup;
+			children = (
+				3134AEEB1A8D12A300BF61A5 /* AppDelegate.h */,
+				3134AEEC1A8D12A300BF61A5 /* AppDelegate.m */,
+				3134AF131A8D44F400BF61A5 /* FISWorkout.h */,
+				3134AF141A8D44F400BF61A5 /* FISWorkout.m */,
+				3134AF161A8E5D8100BF61A5 /* FISExercise.h */,
+				3134AF171A8E5D8100BF61A5 /* FISExercise.m */,
+				3134AFA01A94F10900BF61A5 /* FISMuscleGroup.h */,
+				3134AFA11A94F10900BF61A5 /* FISMuscleGroup.m */,
+				3134AEEE1A8D12A300BF61A5 /* StatsViewController.h */,
+				3134AEEF1A8D12A300BF61A5 /* StatsViewController.m */,
+				3134AF101A8D3E8D00BF61A5 /* AddEntryViewController.h */,
+				3134AF111A8D3E8D00BF61A5 /* AddEntryViewController.m */,
+				3134AF191A8E636600BF61A5 /* AddExerciseViewController.h */,
+				3134AF1A1A8E636600BF61A5 /* AddExerciseViewController.m */,
+				3134AEF11A8D12A300BF61A5 /* Main.storyboard */,
+				3134AEF41A8D12A300BF61A5 /* Images.xcassets */,
+				3134AFB91A94F1E100BF61A5 /* MuscleImages */,
+				3134AEF61A8D12A300BF61A5 /* LaunchScreen.xib */,
+				3134AEE71A8D12A300BF61A5 /* Supporting Files */,
+			);
+			path = "objc-MuscleCollection";
+			sourceTree = "<group>";
+		};
+		3134AEE71A8D12A300BF61A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3134AEE81A8D12A300BF61A5 /* Info.plist */,
+				3134AEE91A8D12A300BF61A5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3134AF001A8D12A300BF61A5 /* objc-MuscleCollectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				3134AF011A8D12A300BF61A5 /* Supporting Files */,
+			);
+			path = "objc-MuscleCollectionTests";
+			sourceTree = "<group>";
+		};
+		3134AF011A8D12A300BF61A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3134AF021A8D12A300BF61A5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3134AFB91A94F1E100BF61A5 /* MuscleImages */ = {
+			isa = PBXGroup;
+			children = (
+				3134AFBA1A951EC600BF61A5 /* BicepsBrachii.png */,
+				3134AFBB1A951EC600BF61A5 /* Deltoid.png */,
+				3134AFBC1A951EC600BF61A5 /* ExternalOblique.png */,
+				3134AFBD1A951EC600BF61A5 /* GluteusMaximus.png */,
+				3134AFBE1A951EC600BF61A5 /* LatissimusDorsi.png */,
+				3134AFBF1A951EC600BF61A5 /* PectoralisMajor.png */,
+				3134AFC01A951EC600BF61A5 /* PectoralisMinor.png */,
+				3134AFC11A951EC600BF61A5 /* RectusAbdominis.png */,
+				3134AFC21A951EC600BF61A5 /* TransversusAbdominis.png */,
+				3134AFC31A951EC600BF61A5 /* Trapezius.png */,
+				3134AFC41A951EC600BF61A5 /* VastusLateralis.png */,
+			);
+			name = MuscleImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3134AEE31A8D12A300BF61A5 /* objc-MuscleCollection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3134AF071A8D12A300BF61A5 /* Build configuration list for PBXNativeTarget "objc-MuscleCollection" */;
+			buildPhases = (
+				3134AEE01A8D12A300BF61A5 /* Sources */,
+				3134AEE11A8D12A300BF61A5 /* Frameworks */,
+				3134AEE21A8D12A300BF61A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "objc-MuscleCollection";
+			productName = "objc-PushupProtocols";
+			productReference = 3134AEE41A8D12A300BF61A5 /* objc-MuscleCollection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3134AEFC1A8D12A300BF61A5 /* objc-MuscleCollectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3134AF0A1A8D12A300BF61A5 /* Build configuration list for PBXNativeTarget "objc-MuscleCollectionTests" */;
+			buildPhases = (
+				3134AEF91A8D12A300BF61A5 /* Sources */,
+				3134AEFA1A8D12A300BF61A5 /* Frameworks */,
+				3134AEFB1A8D12A300BF61A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3134AEFF1A8D12A300BF61A5 /* PBXTargetDependency */,
+			);
+			name = "objc-MuscleCollectionTests";
+			productName = "objc-PushupProtocolsTests";
+			productReference = 3134AEFD1A8D12A300BF61A5 /* objc-MuscleCollectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3134AEDC1A8D12A300BF61A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Zachary Drossman";
+				TargetAttributes = {
+					3134AEE31A8D12A300BF61A5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3134AEFC1A8D12A300BF61A5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3134AEE31A8D12A300BF61A5;
+					};
+				};
+			};
+			buildConfigurationList = 3134AEDF1A8D12A300BF61A5 /* Build configuration list for PBXProject "objc-MuscleCollection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3134AEDB1A8D12A300BF61A5;
+			productRefGroup = 3134AEE51A8D12A300BF61A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3134AEE31A8D12A300BF61A5 /* objc-MuscleCollection */,
+				3134AEFC1A8D12A300BF61A5 /* objc-MuscleCollectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3134AEE21A8D12A300BF61A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3134AFCA1A951EC600BF61A5 /* PectoralisMajor.png in Resources */,
+				3134AFCF1A951EC600BF61A5 /* VastusLateralis.png in Resources */,
+				3134AFCD1A951EC600BF61A5 /* TransversusAbdominis.png in Resources */,
+				3134AFCB1A951EC600BF61A5 /* PectoralisMinor.png in Resources */,
+				3134AFCC1A951EC600BF61A5 /* RectusAbdominis.png in Resources */,
+				3134AFC51A951EC600BF61A5 /* BicepsBrachii.png in Resources */,
+				3134AFCE1A951EC600BF61A5 /* Trapezius.png in Resources */,
+				3134AEF31A8D12A300BF61A5 /* Main.storyboard in Resources */,
+				3134AFC71A951EC600BF61A5 /* ExternalOblique.png in Resources */,
+				3134AFC61A951EC600BF61A5 /* Deltoid.png in Resources */,
+				3134AFC81A951EC600BF61A5 /* GluteusMaximus.png in Resources */,
+				3134AFC91A951EC600BF61A5 /* LatissimusDorsi.png in Resources */,
+				3134AEF81A8D12A300BF61A5 /* LaunchScreen.xib in Resources */,
+				3134AEF51A8D12A300BF61A5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3134AEFB1A8D12A300BF61A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3134AEE01A8D12A300BF61A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3134AEF01A8D12A300BF61A5 /* StatsViewController.m in Sources */,
+				3134AF121A8D3E8D00BF61A5 /* AddEntryViewController.m in Sources */,
+				3134AF181A8E5D8100BF61A5 /* FISExercise.m in Sources */,
+				3134AF1B1A8E636600BF61A5 /* AddExerciseViewController.m in Sources */,
+				3134AF151A8D44F400BF61A5 /* FISWorkout.m in Sources */,
+				3134AEED1A8D12A300BF61A5 /* AppDelegate.m in Sources */,
+				3134AFA21A94F10900BF61A5 /* FISMuscleGroup.m in Sources */,
+				3134AEEA1A8D12A300BF61A5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3134AEF91A8D12A300BF61A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3134AEFF1A8D12A300BF61A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3134AEE31A8D12A300BF61A5 /* objc-MuscleCollection */;
+			targetProxy = 3134AEFE1A8D12A300BF61A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3134AEF11A8D12A300BF61A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3134AEF21A8D12A300BF61A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3134AEF61A8D12A300BF61A5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3134AEF71A8D12A300BF61A5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3134AF051A8D12A300BF61A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3134AF061A8D12A300BF61A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3134AF081A8D12A300BF61A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "objc-MuscleCollection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "objc-MuscleCollection";
+			};
+			name = Debug;
+		};
+		3134AF091A8D12A300BF61A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "objc-MuscleCollection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "objc-MuscleCollection";
+			};
+			name = Release;
+		};
+		3134AF0B1A8D12A300BF61A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "objc-MuscleCollectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "objc-MuscleCollectionTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/objc-MuscleCollection.app/objc-PushupProtocols";
+			};
+			name = Debug;
+		};
+		3134AF0C1A8D12A300BF61A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "objc-MuscleCollectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "objc-MuscleCollectionTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/objc-MuscleCollection.app/objc-PushupProtocols";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3134AEDF1A8D12A300BF61A5 /* Build configuration list for PBXProject "objc-MuscleCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3134AF051A8D12A300BF61A5 /* Debug */,
+				3134AF061A8D12A300BF61A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3134AF071A8D12A300BF61A5 /* Build configuration list for PBXNativeTarget "objc-MuscleCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3134AF081A8D12A300BF61A5 /* Debug */,
+				3134AF091A8D12A300BF61A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3134AF0A1A8D12A300BF61A5 /* Build configuration list for PBXNativeTarget "objc-MuscleCollectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3134AF0B1A8D12A300BF61A5 /* Debug */,
+				3134AF0C1A8D12A300BF61A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3134AEDC1A8D12A300BF61A5 /* Project object */;
+}
