@@ -154,7 +154,7 @@
         
     }
     else {
-        //Get some predicate practice and fill this out to make your lab work!
+        //TODO: Get some predicate practice and fill this out to make your lab work!
     }
     
     NSArray *filteredWorkouts = [self.workouts filteredArrayUsingPredicate:workoutFilter];
