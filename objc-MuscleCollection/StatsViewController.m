@@ -32,7 +32,8 @@
 
 @implementation StatsViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.workouts = [[NSMutableArray alloc] init];
     self.picker.delegate = self;
@@ -42,12 +43,13 @@
                forControlEvents:UIControlEventValueChanged];
 }
 
--(void)measurementChanged {
+-(void)measurementChanged
+{
     [self.picker reloadAllComponents];
 }
 
--(NSArray *)muscleGroups {
-    
+-(NSArray *)muscleGroups
+{
     if (!_muscleGroups) {
         
         FISMuscleGroup *trapezius = [[FISMuscleGroup alloc] initWithName:@"Trapezius" MuscleGroupImage:[UIImage imageNamed:@"Trapezius.png"]];
@@ -59,7 +61,7 @@
         FISMuscleGroup *pectoralisMajor = [[FISMuscleGroup alloc] initWithName:@"Pectoralis Major" MuscleGroupImage:[UIImage imageNamed:@"PectoralisMajor.png"]];
         FISMuscleGroup *pectoralisMinor = [[FISMuscleGroup alloc] initWithName:@"Pectoralis Minor" MuscleGroupImage:[UIImage imageNamed:@"PectoralisMinor.png"]];
         FISMuscleGroup *rectusAbdominus = [[FISMuscleGroup alloc] initWithName:@"Rectus Abdominis" MuscleGroupImage:[UIImage imageNamed:@"RectusAbdominis.png"]];
-        FISMuscleGroup *transverseAbdominus = [[FISMuscleGroup alloc] initWithName:@"Transverse Abdominis" MuscleGroupImage:[UIImage imageNamed:@"TransverseAbominis.png" ]];
+        FISMuscleGroup *transverseAbdominus = [[FISMuscleGroup alloc] initWithName:@"Transverse Abdominis" MuscleGroupImage:[UIImage imageNamed:@"TransverseAbdominis.png" ]];
         FISMuscleGroup *vastusLateralis = [[FISMuscleGroup alloc] initWithName:@"Quadriceps" MuscleGroupImage:[UIImage imageNamed:@"VastusLateralis.png"]];
         
         
@@ -70,14 +72,13 @@
     return _muscleGroups;
 }
 
--(void)setWorkouts:(NSMutableArray *)workouts {
-    
+-(void)setWorkouts:(NSMutableArray *)workouts
+{
     _workouts = workouts;
-    
-    
 }
 
--(NSMutableArray *)exercises {
+-(NSMutableArray *)exercises
+{
     if (!_exercises) {
         FISExercise *pushups = [[FISExercise alloc] initWithName:@"Pushups"];
         pushups.muscleGroups = [[NSMutableArray alloc] initWithArray: @[@"Pectoralis Major", @"Pectoralis Minor", @"Latissimus Dorsi"]];
@@ -87,9 +88,8 @@
     return _exercises;
 }
 
-
-- (void)updateUI {
-    
+- (void)updateUI
+{
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     
     [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
@@ -113,13 +113,13 @@
 }
 
 
-- (NSNumber *)totalNumberOfSelected {
-    
+- (NSNumber *)totalNumberOfSelected
+{
     return [self.workoutsOfSelected valueForKeyPath:@"@sum.reps"];
 }
 
-- (NSNumber *)averageSelectedPerDay {
-   
+- (NSNumber *)averageSelectedPerDay
+{
     NSArray *dates = [self.workoutsOfSelected valueForKeyPath:@"@distinctUnionOfObjects.computedDate"];
     
     NSNumber *countOfDays = [dates valueForKeyPath:@"@count"];
@@ -127,16 +127,16 @@
     return  @([self.totalNumberOfSelected floatValue]/[countOfDays floatValue]);
 }
 
-- (NSNumber *)averageSelectedPerSet {
-    
+- (NSNumber *)averageSelectedPerSet
+{
     NSNumber *countOfSets = [self.workoutsOfSelected valueForKeyPath:@"@sum.sets"];
     
     return @([self.totalNumberOfSelected floatValue]/[countOfSets floatValue]);
     
 }
 
-- (NSNumber *)averageNumberOfWorkoutBuddies {
-    
+- (NSNumber *)averageNumberOfWorkoutBuddies
+{
     NSNumber *countOfTotalWorkoutBuddies = [self.workoutsOfSelected valueForKeyPath:@"@sum.numberOfWorkoutBuddies"];
     NSNumber *countOfWorkouts = [self.workoutsOfSelected valueForKeyPath:@"@count"];
     
@@ -144,17 +144,19 @@
 
 }
 
--(NSMutableArray *)workoutsOfSelected {
+-(NSMutableArray *)workoutsOfSelected
+{
     
     NSUInteger pickerRow = [self.picker selectedRowInComponent:0];
     NSPredicate *workoutFilter;
-    if (self.pickerSegmentedControl.selectedSegmentIndex == 0) {
-        
+    if (self.pickerSegmentedControl.selectedSegmentIndex == 0)
+    {
         workoutFilter = [NSPredicate predicateWithFormat:@"exercise.name == %@", ((FISExercise *)self.exercises[pickerRow]).name];
-        
     }
-    else {
+    else
+    {
         //TODO: Get some predicate practice and fill this out to make your lab work!
+        workoutFilter = [NSPredicate predicateWithFormat:@"ANY exercise.muscleGroups == %@",((FISMuscleGroup *)self.muscleGroups[pickerRow]).name];
     }
     
     NSArray *filteredWorkouts = [self.workouts filteredArrayUsingPredicate:workoutFilter];
@@ -169,17 +171,20 @@
     return _workoutsOfSelected;
 }
 
--(void)addNewWorkout:(FISWorkout *)workout {
+-(void)addNewWorkout:(FISWorkout *)workout
+{
     [self.workouts addObject:workout];
     [self updateUI];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)cancel {
+-(void)cancel
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     
     AddEntryViewController *addEntryVC = [segue destinationViewController];
     addEntryVC.delegate = self;
@@ -188,8 +193,8 @@
     
 }
 
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
     if (self.pickerSegmentedControl.selectedSegmentIndex == 0) {
         return ((FISExercise *)self.exercises[row]).name;
     }
@@ -200,11 +205,13 @@
     }
 }
 
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
     return 1;
 }
 
--(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
     if (self.pickerSegmentedControl.selectedSegmentIndex == 0) {
         return [self.exercises count];
     }
@@ -215,7 +222,8 @@
     }
 }
 
--(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
     [self updateUI];
 }
 

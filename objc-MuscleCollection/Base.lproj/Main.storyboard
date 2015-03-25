@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uPc-xS-xfc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uPc-xS-xfc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -363,6 +363,55 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2pa-aG-ou2">
+                                <rect key="frame" x="214" y="224" width="172" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="232" id="9Ot-z6-Liw"/>
+                                    <constraint firstAttribute="width" constant="172" id="bPk-dC-Olz"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IPN-xk-Ezq">
+                                    <size key="itemSize" width="150" height="210"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="11" minY="11" maxX="11" maxY="11"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="f7j-sn-vlP" customClass="FISMuscleGroupCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VmT-Zy-dGV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSQ-h3-odo">
+                                                    <rect key="frame" x="0.0" y="96" width="150" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="HSQ-h3-odo" firstAttribute="centerY" secondItem="f7j-sn-vlP" secondAttribute="centerY" id="Dyu-wj-RiU"/>
+                                            <constraint firstItem="VmT-Zy-dGV" firstAttribute="bottom" secondItem="f7j-sn-vlP" secondAttribute="bottom" id="KUm-m1-P9d"/>
+                                            <constraint firstItem="VmT-Zy-dGV" firstAttribute="trailing" secondItem="f7j-sn-vlP" secondAttribute="trailing" id="LTb-To-A8T"/>
+                                            <constraint firstItem="VmT-Zy-dGV" firstAttribute="top" secondItem="f7j-sn-vlP" secondAttribute="top" id="Png-Yu-VZz"/>
+                                            <constraint firstItem="HSQ-h3-odo" firstAttribute="trailing" secondItem="f7j-sn-vlP" secondAttribute="trailing" id="Qkh-HB-Fng"/>
+                                            <constraint firstItem="HSQ-h3-odo" firstAttribute="leading" secondItem="f7j-sn-vlP" secondAttribute="leading" id="edf-9G-hKi"/>
+                                            <constraint firstItem="VmT-Zy-dGV" firstAttribute="leading" secondItem="f7j-sn-vlP" secondAttribute="leading" id="mJl-lC-pu0"/>
+                                        </constraints>
+                                        <size key="customSize" width="150" height="210"/>
+                                        <connections>
+                                            <outlet property="muscleGroupImage" destination="VmT-Zy-dGV" id="eR8-Rx-5d4"/>
+                                            <outlet property="muscleGroupName" destination="HSQ-h3-odo" id="kxH-NO-2m1"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -370,6 +419,8 @@
                             <constraint firstItem="vqn-qh-zcP" firstAttribute="centerY" secondItem="iMH-mj-OgS" secondAttribute="centerY" constant="-4.75" id="Bgs-TY-9f5"/>
                             <constraint firstItem="4Rv-2c-M0f" firstAttribute="leading" secondItem="vqn-qh-zcP" secondAttribute="leading" id="Cd4-FE-4YW"/>
                             <constraint firstItem="vqn-qh-zcP" firstAttribute="top" secondItem="PIl-bS-YyE" secondAttribute="bottom" constant="102" id="HUf-Ow-5BE"/>
+                            <constraint firstItem="2pa-aG-ou2" firstAttribute="centerY" secondItem="sW3-Mi-sa8" secondAttribute="centerY" constant="40" id="PC4-Ya-Dto"/>
+                            <constraint firstAttribute="centerX" secondItem="2pa-aG-ou2" secondAttribute="centerX" id="UDI-Xa-4cB"/>
                             <constraint firstItem="GJ2-2W-Pj0" firstAttribute="leading" secondItem="sW3-Mi-sa8" secondAttribute="leadingMargin" constant="20" id="VAq-XQ-1bv"/>
                             <constraint firstItem="vqn-qh-zcP" firstAttribute="leading" secondItem="sW3-Mi-sa8" secondAttribute="leadingMargin" constant="20" id="YNA-uZ-JP5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iMH-mj-OgS" secondAttribute="trailing" constant="20" id="Zm2-7a-xC2"/>
@@ -379,12 +430,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="exerciseCollectionView" destination="2pa-aG-ou2" id="YNz-FP-MfE"/>
                         <outlet property="exerciseName" destination="iMH-mj-OgS" id="Jwg-pk-8hb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAf-VX-cXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476" y="198.5"/>
+            <point key="canvasLocation" x="1583" y="379"/>
         </scene>
     </scenes>
 </document>

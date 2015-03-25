@@ -26,9 +26,10 @@
 		3134AFCA1A951EC600BF61A5 /* PectoralisMajor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFBF1A951EC600BF61A5 /* PectoralisMajor.png */; };
 		3134AFCB1A951EC600BF61A5 /* PectoralisMinor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC01A951EC600BF61A5 /* PectoralisMinor.png */; };
 		3134AFCC1A951EC600BF61A5 /* RectusAbdominis.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC11A951EC600BF61A5 /* RectusAbdominis.png */; };
-		3134AFCD1A951EC600BF61A5 /* TransversusAbdominis.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC21A951EC600BF61A5 /* TransversusAbdominis.png */; };
 		3134AFCE1A951EC600BF61A5 /* Trapezius.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC31A951EC600BF61A5 /* Trapezius.png */; };
 		3134AFCF1A951EC600BF61A5 /* VastusLateralis.png in Resources */ = {isa = PBXBuildFile; fileRef = 3134AFC41A951EC600BF61A5 /* VastusLateralis.png */; };
+		A01F87581AC226130032C9F3 /* TransverseAbdominis.png in Resources */ = {isa = PBXBuildFile; fileRef = A01F87571AC226130032C9F3 /* TransverseAbdominis.png */; };
+		A05A8A141AC2072400ACC5AB /* FISMuscleGroupCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05A8A131AC2072400ACC5AB /* FISMuscleGroupCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +73,11 @@
 		3134AFBF1A951EC600BF61A5 /* PectoralisMajor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PectoralisMajor.png; path = MuscleImages/PectoralisMajor.png; sourceTree = "<group>"; };
 		3134AFC01A951EC600BF61A5 /* PectoralisMinor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PectoralisMinor.png; path = MuscleImages/PectoralisMinor.png; sourceTree = "<group>"; };
 		3134AFC11A951EC600BF61A5 /* RectusAbdominis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RectusAbdominis.png; path = MuscleImages/RectusAbdominis.png; sourceTree = "<group>"; };
-		3134AFC21A951EC600BF61A5 /* TransversusAbdominis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TransversusAbdominis.png; path = MuscleImages/TransversusAbdominis.png; sourceTree = "<group>"; };
 		3134AFC31A951EC600BF61A5 /* Trapezius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trapezius.png; path = MuscleImages/Trapezius.png; sourceTree = "<group>"; };
 		3134AFC41A951EC600BF61A5 /* VastusLateralis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VastusLateralis.png; path = MuscleImages/VastusLateralis.png; sourceTree = "<group>"; };
+		A01F87571AC226130032C9F3 /* TransverseAbdominis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TransverseAbdominis.png; path = MuscleImages/TransverseAbdominis.png; sourceTree = "<group>"; };
+		A05A8A121AC2072400ACC5AB /* FISMuscleGroupCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISMuscleGroupCollectionViewCell.h; sourceTree = "<group>"; };
+		A05A8A131AC2072400ACC5AB /* FISMuscleGroupCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISMuscleGroupCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				3134AF111A8D3E8D00BF61A5 /* AddEntryViewController.m */,
 				3134AF191A8E636600BF61A5 /* AddExerciseViewController.h */,
 				3134AF1A1A8E636600BF61A5 /* AddExerciseViewController.m */,
+				A05A8A121AC2072400ACC5AB /* FISMuscleGroupCollectionViewCell.h */,
+				A05A8A131AC2072400ACC5AB /* FISMuscleGroupCollectionViewCell.m */,
 				3134AEF11A8D12A300BF61A5 /* Main.storyboard */,
 				3134AEF41A8D12A300BF61A5 /* Images.xcassets */,
 				3134AFB91A94F1E100BF61A5 /* MuscleImages */,
@@ -175,7 +180,7 @@
 				3134AFBF1A951EC600BF61A5 /* PectoralisMajor.png */,
 				3134AFC01A951EC600BF61A5 /* PectoralisMinor.png */,
 				3134AFC11A951EC600BF61A5 /* RectusAbdominis.png */,
-				3134AFC21A951EC600BF61A5 /* TransversusAbdominis.png */,
+				A01F87571AC226130032C9F3 /* TransverseAbdominis.png */,
 				3134AFC31A951EC600BF61A5 /* Trapezius.png */,
 				3134AFC41A951EC600BF61A5 /* VastusLateralis.png */,
 			);
@@ -264,8 +269,8 @@
 			files = (
 				3134AFCA1A951EC600BF61A5 /* PectoralisMajor.png in Resources */,
 				3134AFCF1A951EC600BF61A5 /* VastusLateralis.png in Resources */,
-				3134AFCD1A951EC600BF61A5 /* TransversusAbdominis.png in Resources */,
 				3134AFCB1A951EC600BF61A5 /* PectoralisMinor.png in Resources */,
+				A01F87581AC226130032C9F3 /* TransverseAbdominis.png in Resources */,
 				3134AFCC1A951EC600BF61A5 /* RectusAbdominis.png in Resources */,
 				3134AFC51A951EC600BF61A5 /* BicepsBrachii.png in Resources */,
 				3134AFCE1A951EC600BF61A5 /* Trapezius.png in Resources */,
@@ -293,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05A8A141AC2072400ACC5AB /* FISMuscleGroupCollectionViewCell.m in Sources */,
 				3134AEF01A8D12A300BF61A5 /* StatsViewController.m in Sources */,
 				3134AF121A8D3E8D00BF61A5 /* AddEntryViewController.m in Sources */,
 				3134AF181A8E5D8100BF61A5 /* FISExercise.m in Sources */,
